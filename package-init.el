@@ -32,8 +32,9 @@
 		    helm helm-core helm-rtags helm-smex
 		    pkg-info
 		    popup
-		    rtags
+		    rtags company-rtags
 		    smex
+		    cmake-ide cmake-mode
 		    )))
   (when (or (null package-activated-list) (cl-set-difference package-activated-list mypackages))
     (mapc
