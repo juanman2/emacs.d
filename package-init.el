@@ -32,6 +32,7 @@
 		    helm helm-core helm-rtags helm-smex
 		    pkg-info
 		    popup
+		    company company-irony company-irony-c-headers
 		    rtags company-rtags
 		    smex
 		    cmake-ide cmake-mode
