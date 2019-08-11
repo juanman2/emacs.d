@@ -1,12 +1,9 @@
 *.elc
 *~
 elpa/**
-*.dat
 *.data 
+*.dat
 smex-items
 auto-save-list/**
 bookmarks
 irony/**
-ac-comphist.dat
-
-

@@ -27,16 +27,16 @@
 		    auto-complete-clang auto-complete-c-headers
 		    dash
 		    epl
-		    flycheck flycheck-rtags
 		    google-c-style
 		    helm helm-core helm-rtags helm-smex
 		    pkg-info
 		    popup
 		    company 
-		    irony company-irony company-irony-c-headers
 		    rtags company-rtags
-		    smex
+		    irony company-irony company-irony-c-headers
+		    flycheck flycheck-rtags flycheck-irony 
 		    cmake-ide cmake-mode
+		    smex
 		    )))
   (when (or (null package-activated-list) (cl-set-difference package-activated-list mypackages))
     (mapc
