@@ -107,3 +107,9 @@
 (define-key c-mode-map [(tab)] 'company-complete)
 (define-key c++-mode-map [(tab)] 'company-complete)
 
+;; Compilation
+
+(global-set-key (kbd "C-M-4") (lambda ()
+                               (interactive)
+                               (setq-local compilation-read-command nil)
+                               (call-interactively 'compile)))
