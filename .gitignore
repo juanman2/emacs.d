@@ -1,0 +1,9 @@
+*.elc
+*~
+elpa/**
+*.data 
+*.dat
+smex-items
+auto-save-list/**
+bookmarks
+irony/**
