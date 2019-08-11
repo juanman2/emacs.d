@@ -1,2 +1,38 @@
-((("yasnippet-snippets" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0])))
+((("project-include-paths" .
+   [1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("flymake-cursor" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("c-mode-common-hook" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("auto-complete" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("auto-complete-1" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("require" .
+   [5 0 0 0 0 0 0])
+  ("main" .
+   [1 0 0 0])
+  ("fooBar" .
+   [1 0 0 0 0 0])
+  ("flymake-cursor-mode" .
+   [0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0])
+  ("package-install" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("yasnippet-snippets" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0])
+  ("semantic-gcc-setup" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("let" .
+   [1 0 0])
+  ("list" .
+   [1 0 0 0])
+  ("setq" .
+   [2 0 0 0])
+  ("nil" .
+   [3 0 0])
+  ("irony-mode" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("global-company-mode" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("company-irony-c-headers" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])))

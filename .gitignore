@@ -6,3 +6,7 @@ elpa/**
 smex-items
 auto-save-list/**
 bookmarks
+irony/**
+ac-comphist.dat
+
+
