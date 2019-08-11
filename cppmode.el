@@ -1,7 +1,9 @@
 ;; Juan Tellez' CPPMODE - This files contains the hooks for C++ and C
 ;;
 ;; All of this is borrowed from others, particular credit to:
-;; byuksel, atilaneves, syamajala, tuhdo
+;; atilaneves (cmake-ide), syamajala(guide), tuhdo(guide),
+;; byuksel(videos for inspiration, although much is out of date)
+;; parbo: http://parbo.github.io/blog/2016/05/10/configuring-emacs-for-cpp/
 ;;
 
 ;; Settings
@@ -108,8 +110,24 @@
 (define-key c++-mode-map [(tab)] 'company-complete)
 
 ;; Compilation
+;; See http://tuhdo.github.io/c-ide.html#orgheadline57
+;; See https://www.emacswiki.org/emacs/CompileCommand
+;;
 
-(global-set-key (kbd "C-M-4") (lambda ()
+(global-set-key (kbd "C-M-5") (lambda ()
                                (interactive)
-                               (setq-local compilation-read-command nil)
                                (call-interactively 'compile)))
+
+;;
+;; Package: smartparens
+(require 'smartparens-config)
+(show-smartparens-global-mode +1)
+(smartparens-global-mode 1)
+
+;; when you press RET, the curly braces automatically
+;; add another newline
+(sp-with-modes '(c-mode c++-mode)
+  (sp-local-pair "{" nil :post-handlers '(("||\n[i]" "RET")))
+  (sp-local-pair "/*" "*/" :post-handlers '((" | " "SPC")
+                                            ("* ||\n[i]" "RET"))))
+

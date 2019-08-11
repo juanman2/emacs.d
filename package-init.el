@@ -37,6 +37,7 @@
 		    flycheck flycheck-rtags flycheck-irony 
 		    cmake-ide cmake-mode
 		    smex
+		    smartparens 
 		    )))
   (when (or (null package-activated-list) (cl-set-difference package-activated-list mypackages))
     (mapc
