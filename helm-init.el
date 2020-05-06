@@ -11,7 +11,7 @@
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 ;; Old M-x.
-(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+;;(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 ;; The default "C-x c" is quite close to "C-x C-c", which quits Emacs.
 ;; Changed to "C-c h". Note: We must set "C-c h" globally, because we

@@ -11,10 +11,6 @@
 (column-number-mode 1)
 (show-paren-mode t)
 
-; Go mode
-(autoload 'go-mode "go-mode" "Major mode for editing Go code." t)
-(add-to-list 'auto-mode-alist '("\\.go\\'" . go-mode))
-
 ; CMake mode
 (autoload 'cmake-mode "cmake-mode" "Major mode for editing Cmake files." t)
 (add-to-list 'auto-mode-alist '("CMakeLists\\.txt\\'" . cmake-mode))
@@ -82,6 +78,12 @@
 ;; cppmode
 (load-file "~/.emacs.d/cppmode.el")
 
+;; go-mode
+(load-file "~/.emacs.d/gomode.el")
+
+;; lsp-mode (go)
+(load-file "~/.emacs.d/lspmode.el")
+
 ;; helm
 (load-file "~/.emacs.d/helm-init.el")
 
@@ -102,7 +104,7 @@
  '(flymake-google-cpplint-command "/usr/local/bin/cpplint")
  '(package-selected-packages
    (quote
-    (flycheck-irony iedit yasnippet-snippets ac-c-headers auto-complete yasnippet auto-complete-c-headers))))
+    (use-package flycheck-irony iedit yasnippet-snippets ac-c-headers auto-complete yasnippet auto-complete-c-headers))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

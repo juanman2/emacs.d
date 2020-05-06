@@ -7,16 +7,22 @@
 ;; Packages
 ; start package.el with emacs
 (require 'package)
-(require 'cl-lib)
-					; add MELPA to repository list
-
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+			 ("melpa-stable" . "http://stable.melpa.org/packages/") 
                          ("melpa" . "http://melpa.milkbox.net/packages/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")
 			 ("org" . "http://orgmode.org/elpa/")))
 
 ;; initialize package.el
 (package-initialize)
+
+(eval-when-compile
+  (require 'use-package))
+
+(require 'cl-lib)
+
+(require 'diminish)                ;; if you use :diminish
+(require 'bind-key)                ;; if you use any :bind variant
 
 (unless package-activated-list (package-refresh-contents)) ;get list of packages
 (let ((mypackages '(ac-c-headers
