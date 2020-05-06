@@ -7,3 +7,4 @@ smex-items
 auto-save-list/**
 bookmarks
 irony/**
+.lsp*
