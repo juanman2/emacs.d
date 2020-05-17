@@ -5,11 +5,14 @@
 :ensure t
 :mode ("\\.go\\'" . go-mode)
 :init
+  (setq c-basic-offset 4)
+  (setq-default tab-width 4)
   (setq compile-command "echo Building... && go build -v && echo Testing... && go test -v && echo Linter... && golint")  
   (setq compilation-read-command nil)
   (add-hook 'go-mode-hook 'custom-go-mode)
-:bind (("M-," . compile)
-("M-." . godef-jump)))
+:bind (("C-M-5" . compile)
+       ("M-." . godef-jump)))
+
 
 (setq compilation-window-height 14)
 (defun my-compilation-hook ()
@@ -25,3 +28,5 @@
 
 (global-set-key (kbd "C-c C-c") 'comment-or-uncomment-region)
 (setq compilation-scroll-output t)
+(global-set-key (kbd "M-,") 'next-error)
+

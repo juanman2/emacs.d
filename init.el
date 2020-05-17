@@ -22,6 +22,10 @@
 (setq mac-command-modifier 'meta)
 (setq mac-option-modifier nil)
 
+;; tabs
+(setq c-basic-offset 4)
+(setq-default tab-width 4)
+
 ;; sexp Keys already defined, here for documentation
 ;; 
 ;; C-M-f runs forward-sexp, move forward over a balanced
