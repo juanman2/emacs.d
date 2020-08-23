@@ -22,6 +22,12 @@
 (setq mac-command-modifier 'meta)
 (setq mac-option-modifier nil)
 
+;; themes
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+;(load-theme 'monokai t nil)
+(load-theme 'ample t nil)
+;(load-theme 'zenburn-theme t nil)
+
 ;; tabs
 (setq c-basic-offset 4)
 (setq-default tab-width 4)
