@@ -35,7 +35,7 @@
             (global-set-key [C-return] 'company-complete-common)))
 
 ;; Flycheck 
-(require 'flycheck-rtags)
+;;(require 'flycheck-rtags)
 (require 'flycheck-irony)
 
 (defun my-flycheck-rtags-setup ()
@@ -63,7 +63,8 @@
 (setq project-include-paths
       '("/usr/Local/Cellar/wxmac/3.0.4_1/include/wx-3.0/wx/"
 	"/System/Library/Frameworks/OpenGL.framework"
-	"/usr/local/lib/wx/include/osx_cocoa-unicode-3.0;/usr/local/include/wx-3.0"))
+	"/usr/local/lib/wx/include/osx_cocoa-unicode-3.0"
+	"/usr/local/include/wx-3.0"))
 
 (setq cmake-ide-flags-c++
       (append '("-std=c++11")

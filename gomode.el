@@ -8,7 +8,7 @@
   (setq c-basic-offset 4)
   (setq-default tab-width 4)
   (setq compile-command "echo Building... && go build -v && echo Testing... && go test -v && echo Linter... && golint")  
-  (setq compilation-read-command nil)
+  (setq compilation-read-command 1)
   (add-hook 'go-mode-hook 'custom-go-mode)
 :bind (("C-M-5" . compile)
        ("M-." . godef-jump)))
