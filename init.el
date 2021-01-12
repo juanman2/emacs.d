@@ -91,6 +91,9 @@
 ;; go-mode
 (load-file "~/.emacs.d/gomode.el")
 
+;;; python-mode
+(load-file "~/.emacs.d/pymode.el")
+
 ;; lsp-mode (go)
 (load-file "~/.emacs.d/lspmode.el")
 
@@ -113,8 +116,7 @@
  ;; If there is more than one, they won't work right.
  '(flymake-google-cpplint-command "/usr/local/bin/cpplint")
  '(package-selected-packages
-   (quote
-    (use-package flycheck-irony iedit yasnippet-snippets ac-c-headers auto-complete yasnippet auto-complete-c-headers))))
+   '(use-package flycheck-irony iedit yasnippet-snippets ac-c-headers auto-complete yasnippet auto-complete-c-headers)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
