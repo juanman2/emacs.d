@@ -116,7 +116,7 @@
  ;; If there is more than one, they won't work right.
  '(flymake-google-cpplint-command "/usr/local/bin/cpplint")
  '(package-selected-packages
-   '(use-package flycheck-irony iedit yasnippet-snippets ac-c-headers auto-complete yasnippet auto-complete-c-headers)))
+   '(ein use-package flycheck-irony iedit yasnippet-snippets ac-c-headers auto-complete yasnippet auto-complete-c-headers)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

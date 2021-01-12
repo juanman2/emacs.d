@@ -44,6 +44,7 @@
 		    cmake-ide cmake-mode
 		    smex
 		    smartparens
+			elpy ein
 		    )))
   (when (or (null package-activated-list) (cl-set-difference package-activated-list mypackages))
     (mapc
