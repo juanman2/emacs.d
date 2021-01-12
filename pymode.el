@@ -26,3 +26,6 @@
 (add-to-list 'python-shell-completion-native-disabled-interpreters
              "jupyter")
 
+;; material
+(load-theme 'material t)
+

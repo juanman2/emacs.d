@@ -44,7 +44,7 @@
 		    cmake-ide cmake-mode
 		    smex
 		    smartparens
-			elpy ein
+			elpy ein material-theme
 		    )))
   (when (or (null package-activated-list) (cl-set-difference package-activated-list mypackages))
     (mapc

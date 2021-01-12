@@ -32,6 +32,9 @@
 (setq c-basic-offset 4)
 (setq-default tab-width 4)
 
+;; orgmode
+(require 'org)
+
 ;; sexp Keys already defined, here for documentation
 ;; 
 ;; C-M-f runs forward-sexp, move forward over a balanced
@@ -116,7 +119,7 @@
  ;; If there is more than one, they won't work right.
  '(flymake-google-cpplint-command "/usr/local/bin/cpplint")
  '(package-selected-packages
-   '(ein use-package flycheck-irony iedit yasnippet-snippets ac-c-headers auto-complete yasnippet auto-complete-c-headers)))
+   '(material-theme ein use-package flycheck-irony iedit yasnippet-snippets ac-c-headers auto-complete yasnippet auto-complete-c-headers)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
