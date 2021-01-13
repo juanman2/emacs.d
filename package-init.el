@@ -9,8 +9,8 @@
 (require 'package)
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
 			 ("melpa-stable" . "http://stable.melpa.org/packages/") 
-                         ("melpa" . "http://melpa.milkbox.net/packages/")
-                         ("marmalade" . "http://marmalade-repo.org/packages/")
+			 ("melpa" . "https://melpa.org/packages/")
+;;			 ("marmalade" . "http://marmalade-repo.org/packages/")
 			 ("org" . "http://orgmode.org/elpa/")))
 
 ;; initialize package.el
@@ -43,7 +43,8 @@
 		    flycheck flycheck-rtags flycheck-irony 
 		    cmake-ide cmake-mode
 		    smex
-		    smartparens 
+		    smartparens
+			elpy ein material-theme
 		    )))
   (when (or (null package-activated-list) (cl-set-difference package-activated-list mypackages))
     (mapc
