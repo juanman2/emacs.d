@@ -26,6 +26,10 @@
 (add-to-list 'python-shell-completion-native-disabled-interpreters
              "jupyter")
 
+(require 'ein)
+(require 'ein-notebook)
+(require 'ein-subpackages)
+
 ;; material
 (load-theme 'material t)
 
